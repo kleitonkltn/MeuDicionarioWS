@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://services.aonaware.com/DictService/DictService.asmx?wsdl" uri="xml-resources/web-service-references/DictService/wsdl/services.aonaware.com/DictService/DictService.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/dicionario?WSDL" uri="xml-resources/web-service-references/dicionario/wsdl/localhost_8080/dicionario.wsdl"/>
+    <system systemId="http://localhost:8080/dicionario?xsd=1" uri="xml-resources/web-service-references/dicionario/wsdl/localhost_8080/dicionario.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/dicionario?xsd=2" uri="xml-resources/web-service-references/dicionario/wsdl/localhost_8080/dicionario.xsd_2.xsd"/>
+</catalog>

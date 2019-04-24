@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://ws1.ifms/" xmlns:ns1="http://services.aonaware.com/webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws1.ifms/">
+
+<xs:import namespace="http://services.aonaware.com/webservices/" schemaLocation="http://localhost:8080/dicionario?xsd=2"></xs:import>
+
+<xs:element name="AddDefinicaoBD" type="tns:AddDefinicaoBD"></xs:element>
+
+<xs:element name="AddDefinicaoBDResponse" type="tns:AddDefinicaoBDResponse"></xs:element>
+
+<xs:element name="BuscarDefinicaoWSMyWords" type="tns:BuscarDefinicaoWSMyWords"></xs:element>
+
+<xs:element name="BuscarDefinicaoWSMyWordsResponse" type="tns:BuscarDefinicaoWSMyWordsResponse"></xs:element>
+
+<xs:element name="ListarTodasDefinicoesBD" type="tns:ListarTodasDefinicoesBD"></xs:element>
+
+<xs:element name="ListarTodasDefinicoesBDResponse" type="tns:ListarTodasDefinicoesBDResponse"></xs:element>
+
+<xs:complexType name="AddDefinicaoBD">
+<xs:sequence>
+<xs:element name="arg0" type="ns1:definicao" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddDefinicaoBDResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTodasDefinicoesBD">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarTodasDefinicoesBDResponse">
+<xs:sequence>
+<xs:element name="listTodos" type="ns1:definicao" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarDefinicaoWSMyWords">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarDefinicaoWSMyWordsResponse">
+<xs:sequence>
+<xs:element name="DefinicaoWSMyWords" type="ns1:definicao" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
